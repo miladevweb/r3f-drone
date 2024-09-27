@@ -1,11 +1,11 @@
+import dynamic from 'next/dynamic'
+
+const Scene = dynamic(() => import('./_components/scene'), { ssr: false })
+
 export default function Page() {
-  return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
-  )
+  return <Scene />
 }
 
 export const metadata = {
-  title: 'GSAP Transitions | Just Mila',
+  title: 'React Three Fiber - Drone | Just Mila',
 }
